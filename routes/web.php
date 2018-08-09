@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/userProfiles', function () {
+    return view('userProfiles', ['name' => 'James']);
+});
